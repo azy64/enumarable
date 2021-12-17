@@ -4,13 +4,13 @@ class MyList
     include MyEnumerable
     @list 
     def initialize(*list)
-        @list=list
+        @list = list
     end
     def each(&block)
         @list.each(&block)
     end
 end
 
-l = MyList.new(2,3,4)
+l = MyList.new(2, 3, 4)
 puts l.inspect
 puts(l.all? { |e| e < 5 })
