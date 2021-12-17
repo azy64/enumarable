@@ -7,7 +7,6 @@ class MyList
   end
 
   def each()
-    #@list.each(&block)
     i=0
     while i< @list.length do
       yield @list[i]
@@ -20,6 +19,7 @@ end
 l = MyList.new(2, 3, 4)
 puts l.inspect
 puts(l.all? { |e| e < 5 })
-puts l.all? {|e| e > 5}
-puts l.filter {|e| e.even?}
+puts(l.all? { |e| e > 5 }=
+puts(l.filter { |e| e.even? })
+
 
