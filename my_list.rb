@@ -20,4 +20,4 @@ l = MyList.new(2, 3, 4)
 puts l.inspect
 puts(l.all? { |e| e < 5 })
 puts(l.all? { |e| e > 5 })
-puts(l.filter { |e| e.even? })
+puts(l.filter { |e| e&.even? })
