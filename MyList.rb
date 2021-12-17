@@ -2,12 +2,12 @@
 require_relative "MyEnumerable"
 class MyList
     include MyEnumerable
-    @list 
     def initialize(*list)
-        @list = list
+      @list = list
     end
+    
     def each(&block)
-        @list.each(&block)
+      @list.each(&block)
     end
 end
 
