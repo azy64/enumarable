@@ -7,11 +7,11 @@ class MyList
   end
 
   def each()
-    i=0
-    while i< @list.length do
+    i = 0
+    while i < @list.length
       yield @list[i]
-      #puts(@list[i])
-      i+=1
+      # puts(@list[i])
+      i += 1
     end
   end
 end
@@ -21,5 +21,3 @@ puts l.inspect
 puts(l.all? { |e| e < 5 })
 puts(l.all? { |e| e > 5 })
 puts(l.filter { |e| e.even? })
-
-
